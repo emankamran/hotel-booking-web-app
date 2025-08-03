@@ -46,7 +46,6 @@ const appointmentSchema = z
   .refine(
     (data) => {
       const checkIn = new Date(data.checkInDate);
-      const checkOut = new Date(data.checkOutDate);
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
